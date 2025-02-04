@@ -73,11 +73,46 @@
         <effect name="dap" library="dap" uuid="9d4921da-8225-4f29-aefa-39537a04bcaa"/>
         <!-- DOLBY END -->
     </effects>
-
     <!--  Transsion or Three-way Effect stream START -->
     <!-- DOLBY ADD STREAM: don't remove it -->
     <!--  Transsion or Three-way Effect stream END -->
 
+    <postprocess>
+        <stream type="music">
+        </stream>
+        <stream type="ring">
+        </stream>
+        <stream type="alarm">
+        </stream>
+        <stream type="system">
+        </stream>
+        <stream type="voice_call">
+        </stream>
+        <stream type="notification">
+        </stream>
+        <stream type="bluetooth_sco">
+        </stream>
+        <stream type="dtmf">
+        </stream>
+        <stream type="enforced_audible">
+        </stream>
+        <stream type="accessibility">
+        </stream>
+        <stream type="tts">
+        </stream>
+        <stream type="assistant">
+        </stream>
+        <stream type="call_assistant">
+        </stream>
+        <stream type="patch">
+            <apply effect="gamedap"/>
+            <apply effect="dap"/>
+        </stream>
+        <stream type="rerouting">
+            <apply effect="gamedap"/>
+            <apply effect="dap"/>
+        </stream>
+    </postprocess>
     <!-- Audio pre processor configurations.
          The pre processor configuration is described in a "preprocess" element and consists in a
          list of elements each describing pre processor settings for a given use case or "stream".
