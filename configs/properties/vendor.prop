@@ -327,9 +327,6 @@ ro.surface_flinger.game_default_frame_rate_override=120
 ro.vendor.mtk_svp_on_mtee_support=2
 ro.vendor.mtk_trustonic_tee_support=1
 
-# USB
-vendor.usb.controller=musb-hdrc
-
 # Wi-Fi
 ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0
