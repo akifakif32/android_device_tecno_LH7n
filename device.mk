@@ -99,17 +99,16 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
 
 PRODUCT_PACKAGES += \
+    MtkInCallService
+
+PRODUCT_PACKAGES += \
    vendor.mediatek.hardware.bluetooth.audio@2.1.vendor:64 \
    vendor.mediatek.hardware.bluetooth.audio@2.2.vendor:64
-
-# AudioFX
-TARGET_EXCLUDES_AUDIOFX := true
 
 # Audio Fixer
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/audio_fix.sh:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/audio_fix.sh \
     $(LOCAL_PATH)/rootdir/etc/init.audio_fix.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.audio_fix.rc
-  
 
 # Bluetooth
 PRODUCT_PACKAGES += \
