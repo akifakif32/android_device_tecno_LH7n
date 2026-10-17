@@ -880,6 +880,11 @@ vendor/data/camera/morpho/morpho_calibration_video.bin
 vendor/data/camera/vidhance/vidhance.lic
 vendor/data/camera/vidhance/vidhance_calibration
 
+# Charger - from X6837-H897CFQRAbAc-T-BASE-260113V567
+system/bin/kpoc_charger|62d4917bc06b54ff61daa86994b5578821214562
+system/etc/init/kpoc_charger.rc|3fb4409bb355ae302148afac7e65a87423d6d43c
+system/lib64/libshowlogo.so|b7b1e481aaf622ce2560a575b272da5f1239f518
+
 # Connectivity
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
